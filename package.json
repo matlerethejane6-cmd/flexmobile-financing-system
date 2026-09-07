@@ -1,0 +1,44 @@
+{
+  "name": "flexmobile-financing-system",
+  "version": "1.0.0",
+  "description": "FlexMobile Financing Server with Payment Engine and Device Restriction System",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "migrate": "node src/database/connection.js",
+    "seed": "node src/database/seed.js",
+    "lint": "eslint src/"
+  },
+  "keywords": [
+    "financing",
+    "payment-engine",
+    "device-management",
+    "mobile"
+  ],
+  "author": "FlexMobile Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.4.0",
+    "sequelize": "^6.32.0",
+    "jsonwebtoken": "^9.0.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-validator": "^7.0.0",
+    "nodemailer": "^6.9.3",
+    "winston": "^3.8.2",
+    "moment": "^2.29.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.40.0"
+  }
+}
